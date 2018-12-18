@@ -21,7 +21,8 @@ public class TpspringsimpleApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("ok" + args[0]);
+		if (args.length > 0)
+			System.out.println("ok" + args[0]);
 		lane.buyProduct(25, 30);
 	}
 
